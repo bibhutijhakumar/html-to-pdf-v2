@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.w-20{width:20%}
+.w-content{width:fit-content}
+.h-500{min-height:500px}
+.gap-y-4{grid-column-gap: 20px;}
+
+.bg-btn-primary{background-color:#1A91F0!important}
+.border-btn-primary{border:1px solid #1A91F0!important}
+.txt-primary{color:#1A91F0!important}
+.nav-clr a{color:#1e2532}
+.nav-clr a:hover{color:#10529b}
+.nav-link:focus{box-shadow:none}
+.nav-link:hover{box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3)}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.bg-btn-success{background-color:#8BA623}
+
+.page-content > div:nth-child(odd){background-color:#eff2f9}
+
+.custom-container {
+  max-width: 1024px;
+  margin: 0 auto; /* Center the container */
+}
+
+.navbar img{object-fit:cover;}
+
+.convert-html .tab-content{box-shadow:0px 0px 0px 2px #1A91F050}
+.convert-html .nav-item button{border:0!important;}
+.convert-html .nav-item button:hover{border-color:transparent}
+.convert-html .nav-item button.active{border-bottom:0!important;box-shadow:0px -5px 0px 2px #1A91F050}
+.convert-html .nav-item button.active:hover{border-color:#1A91F0;border-bottom-color:#fff;box-shadow:0px -5px 0px 2px #1A91F050}
+.convert-html input[type="file"]{left:0;cursor:pointer}
+
+.file-selected {
+  color: #333; /* Change this to the desired color for the uploaded file name */
+}
+
+/* Create JSON */
+.btn-json{position:absolute;bottom:-25px;left:0;right:0; margin:auto}
