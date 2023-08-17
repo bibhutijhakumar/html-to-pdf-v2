@@ -25,11 +25,23 @@ const [signIn, setSignIn] = useState(false);
         setShowModal(true);
     };
 
+
+    const [showSigninModal, setShowSigninModal] = useState(false);
+
+    const handleSigninModalClose = () => {
+      setShowSigninModal(false);
+    };
+  
+    const handleSigninModalOpen = () => {
+      setShowSigninModal(true);
+    };
+  
+    const handleForgotPassword = () => {
+      console.log('Forgot Password clicked.');
+      // Add your forgot password logic here
+    };
+  
     return (
-        // <div className='navbar'>
-        //     <a className='nav-logo'></a>
-        //     <div className='nav-menu'></div>
-        // </div>
         <nav class="navbar navbar-expand-lg bg-white px-5">
             <div className='d-flex gap-4 align-items-center'>
                 <a class="navbar-brand mr-0 w-25" href="#">
@@ -66,12 +78,12 @@ const [signIn, setSignIn] = useState(false);
                     <ul class="navbar-nav gap-2">
                         <li class="nav-item">
                             {/* <a class="nav-link border-btn-primary txt-primary rounded px-3" href="#">Log in</a> */}
-                            <Button className='nav-link bg-btn-primary text-white rounded px-3' variant="primary"  onClick={handleSignIn}>Signin</Button>
+                            <Button className='hover-shadow bg-btn-primary text-white rounded px-3' variant="primary"  onClick={handleSignIn}>Signin</Button>
                             <SignIn show={signIn} handleClose={handleSignInClose} />
                         </li>
                         <li class="nav-item">
 
-                            <Button className='nav-link bg-btn-primary text-white rounded px-3' variant="primary" onClick={handleShowModal}>Signup</Button>
+                            <Button className='hover-shadow bg-btn-primary text-white rounded px-3' variant="primary" onClick={handleShowModal}>Signup</Button>
                             <Signup show={showModal} handleClose={handleModalClose} />
                         </li>
                     </ul>
